@@ -1,12 +1,11 @@
 package com.geyek.library.demo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
 import com.geyek.library.R;
-import com.geyek.library.utils.Base64Util;
 import com.geyek.library.utils.P2PUrlUtil;
 import com.geyek.library.utils.UiUtil;
 
@@ -26,9 +25,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.main_btn_toast:
-                //String base64 = Base64Util.toBase64("今天真是一个好日子.1230=");
-                //String base64 = Base64Util.fromBase64("5L2g5aW9c2I=");
-                //String base64 = P2PUrlUtil.smartfRromBase64("flashget://W0ZMQVNIR0VUXWVkMms6Ly98ZmlsZXwlRTQlQkIlQkIlRTUlOEElQTElRTglQkYlQjclRTglQjUlQjA3MiVFNSVCMCU4RiVFNiU5NyVCNi5CRDEyODAlRTklQUIlOTglRTYlQjglODUlRTQlQjglQUQlRTglOEIlQjElRTUlOEYlOEMlRTUlQUQlOTcubXA0fDEwMTQ2ODU5OTd8N0I4NUIxQzhBOUYzRTFCREI4MEQ3QjU4NDE0QTJGRDh8aD03WU9QREFJTTU0TlI3UEw1NVZHRlJGQjVFQUVHTkkyR3wvW0ZMQVNIR0VUXQ==&aiyh");
                 String base64 = P2PUrlUtil.smartToBase64("ed2k://|file|%E4%BB%BB%E5%8A%A1%E8%BF%B7%E8%B5%B072%E5%B0%8F%E6%97%B6.BD1280%E9%AB%98%E6%B8%85%E4%B8%AD%E8%8B%B1%E5%8F%8C%E5%AD%97.mp4|1014685997|7B85B1C8A9F3E1BDB80D7B58414A2FD8|h=7YOPDAIM54NR7PL55VGFRFB5EAEGNI2G|/", P2PUrlUtil.FLASHGET);
                 Log.d("wsy", base64);
                 UiUtil.toast(base64);
