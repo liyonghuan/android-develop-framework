@@ -1,4 +1,4 @@
-package com.geyek.library.utils;
+package com.geyek.utlis;
 
 import android.content.Context;
 import android.widget.Toast;
@@ -22,6 +22,16 @@ public class UiUtil {
      * @param message Toast内容
      */
     public static void toast(String message) {
-        if (mContext != null) Toast.makeText(mContext, message, Toast.LENGTH_SHORT).show();
+        toast(message, Toast.LENGTH_SHORT);
+    }
+
+    /**
+     * 弹一个Toast,指定显示时长
+     *
+     * @param message Toast内容
+     * @param duration 时长
+     */
+    public static void toast(String message, int duration) {
+        if (mContext != null) Toast.makeText(mContext, message, duration).show();
     }
 }

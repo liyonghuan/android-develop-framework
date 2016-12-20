@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
-    package="com.geyek.library"
+    package="com.geyek.utlis"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
-        android:name=".MyAPP"
+        android:name="com.geyek.utlis.com.geyek.MyAPP"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".demo.MainActivity">
+        <activity android:name="com.geyek.demo.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

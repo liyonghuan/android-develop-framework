@@ -1,13 +1,13 @@
-package com.geyek.library.demo;
+package com.geyek.demo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
-import com.geyek.library.R;
-import com.geyek.library.utils.P2PUrlUtil;
-import com.geyek.library.utils.UiUtil;
+import com.geyek.utlis.R;
+import com.geyek.utlis.P2PUrlUtil;
+import com.geyek.utlis.UiUtil;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

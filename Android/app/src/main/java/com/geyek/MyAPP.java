@@ -1,8 +1,8 @@
-package com.geyek.library;
+package com.geyek;
 
 import android.app.Application;
 
-import com.geyek.library.utils.UiUtil;
+import com.geyek.utlis.UiUtil;
 
 /**
  * Created by LiHuan on 08/19/2016.

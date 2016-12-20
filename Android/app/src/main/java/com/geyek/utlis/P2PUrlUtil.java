@@ -1,12 +1,12 @@
-package com.geyek.library.utils;
+package com.geyek.utlis;
 
 /**
  * Created by LiHuan on 08/19/2016.
  */
 public class P2PUrlUtil {
-    public final static String THUNDER  = "thunder://";
-    public final static String FLASHGET = "flashget://";
-    public final static String QQDL     = "qqdl://";
+    public static final String THUNDER  = "thunder://";
+    public static final String FLASHGET = "flashget://";
+    public static final String QQDL     = "qqdl://";
 
     /**
      * 将输入的迅雷专用下载地址转换成普通地址
