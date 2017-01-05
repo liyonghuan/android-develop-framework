@@ -64,7 +64,7 @@ public class P2PUrlUtil {
      * @param specialUrl 专用下载地址
      * @return 返回普通下载地址
      */
-    public static String smartfRromBase64(String specialUrl) {
+    public static String smartFromBase64(String specialUrl) {
         boolean isSpecial;
         String  lowerCase = specialUrl.toLowerCase();
 
