@@ -1,8 +1,8 @@
-package com.geyek;
+package me.stiky;
 
 import android.app.Application;
 
-import com.geyek.utlis.UiUtil;
+import me.stiky.utlis.UiUtil;
 
 /**
  * Created by LiHuan on 08/19/2016.

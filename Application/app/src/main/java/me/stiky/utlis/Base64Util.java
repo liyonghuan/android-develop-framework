@@ -1,4 +1,4 @@
-package com.geyek.utlis;
+package me.stiky.utlis;
 
 import java.io.UnsupportedEncodingException;
 
@@ -102,7 +102,7 @@ public class Base64Util {
      * @param content Base64密文内容
      * @return 返回解密后的明文
      */
-    public static String fromBase64(String content) {
+    public static String fromBase64(String content) throws Base64FormatException {
         byte[] bytes;   //用于存储输入的内容的byte值
         try {
             bytes = content.getBytes("UTF-8");  //默认使用UTF-8来解析明文
@@ -169,7 +169,7 @@ public class Base64Util {
     /**
      * 当Base64的密文不是4的整数倍时,表明密文错误
      */
-    private static class Base64FormatException extends RuntimeException {   //如果是继承Exception则必须强制处理异常
+    public static class Base64FormatException extends Exception {   //如果是继承Exception则必须强制处理异常
         private static final long serialVersionUID = 1L;
 
         public Base64FormatException() {

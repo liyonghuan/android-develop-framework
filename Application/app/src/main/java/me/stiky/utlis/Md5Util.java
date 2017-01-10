@@ -1,4 +1,4 @@
-package com.geyek.utlis;
+package me.stiky.utlis;
 
 /**
  * Created by LiHuan on 08/19/2016.

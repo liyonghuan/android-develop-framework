@@ -1,4 +1,4 @@
-package com.geyek.utlis;
+package me.stiky.utlis;
 
 import android.content.Context;
 import android.widget.Toast;

@@ -1,4 +1,4 @@
-package com.geyek.utlis;
+package me.stiky.utlis;
 
 /**
  * Created by LiHuan on 08/19/2016.
@@ -14,7 +14,7 @@ public class P2PUrlUtil {
      * @param thunder 迅雷专用下载地址
      * @return 返回普通下载地址
      */
-    public static String fromThunder(String thunder) {
+    public static String fromThunder(String thunder) throws P2pUrlFormatException, Base64Util.Base64FormatException {
         String  lowerCase = thunder.toLowerCase();
         boolean isThunder = lowerCase.startsWith(THUNDER);
         if (!isThunder) throw new P2pUrlFormatException("It's not a thunder url!");
@@ -30,7 +30,7 @@ public class P2PUrlUtil {
      * @param flashget 快车专用下载地址
      * @return 返回普通下载地址
      */
-    public static String fromFlashget(String flashget) {
+    public static String fromFlashget(String flashget) throws P2pUrlFormatException, Base64Util.Base64FormatException {
         String  lowerCase  = flashget.toLowerCase();
         boolean isFlashget = lowerCase.startsWith(FLASHGET);
         if (!isFlashget) throw new P2pUrlFormatException("It's not a flashget url!");
@@ -49,7 +49,7 @@ public class P2PUrlUtil {
      * @param qqdl QQ旋风专用下载地址
      * @return 返回普通下载地址
      */
-    public static String fromQqdl(String qqdl) {
+    public static String fromQqdl(String qqdl) throws P2pUrlFormatException, Base64Util.Base64FormatException {
         String  lowerCase = qqdl.toLowerCase();
         boolean isQqdl    = lowerCase.startsWith(QQDL);
         if (!isQqdl) throw new P2pUrlFormatException("It's not a qqdl url!");
@@ -64,7 +64,7 @@ public class P2PUrlUtil {
      * @param specialUrl 专用下载地址
      * @return 返回普通下载地址
      */
-    public static String smartFromBase64(String specialUrl) {
+    public static String smartFromBase64(String specialUrl) throws P2pUrlFormatException, Base64Util.Base64FormatException {
         boolean isSpecial;
         String  lowerCase = specialUrl.toLowerCase();
 
@@ -103,7 +103,7 @@ public class P2PUrlUtil {
      */
     public static String toFlashget(String content) {
         String key = "[FLASHGET]";
-        String sign = "&geyek";
+        String sign = "&stiky";
         content = key + content + key;
         content = Base64Util.toBase64(content);
         content = FLASHGET + content + sign;
@@ -146,7 +146,7 @@ public class P2PUrlUtil {
      * P2pUrlFormatException 异常类
      * 如果输入的专用下载地址不符合要求,则抛出此异常
      */
-    private static class P2pUrlFormatException extends RuntimeException {
+    public static class P2pUrlFormatException extends Exception {
         public P2pUrlFormatException() {
 
         }
