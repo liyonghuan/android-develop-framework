@@ -1,2 +1,2 @@
-# Android_Library
+# AndroidLibrary
 This is a common library.
