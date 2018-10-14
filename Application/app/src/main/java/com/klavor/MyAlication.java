@@ -1,13 +1,13 @@
-package me.stiky;
+package com.klavor;
 
 import android.app.Application;
 
-import me.stiky.utlis.UiUtil;
+import com.klavor.utlis.UiUtil;
 
 /**
  * Created by LiHuan on 08/19/2016.
  */
-public class MyAPP extends Application {
+public class MyAlication extends Application {
 
     @Override
     public void onCreate() {

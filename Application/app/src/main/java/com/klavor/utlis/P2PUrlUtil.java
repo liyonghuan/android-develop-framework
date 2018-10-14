@@ -1,4 +1,4 @@
-package me.stiky.utlis;
+package com.klavor.utlis;
 
 /**
  * Created by LiHuan on 08/19/2016.
@@ -103,7 +103,7 @@ public class P2PUrlUtil {
      */
     public static String toFlashget(String content) {
         String key = "[FLASHGET]";
-        String sign = "&stiky";
+        String sign = "&klavor";
         content = key + content + key;
         content = Base64Util.toBase64(content);
         content = FLASHGET + content + sign;

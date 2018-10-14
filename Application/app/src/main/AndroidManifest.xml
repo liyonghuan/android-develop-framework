@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
-    package="me.stiky.utlis"
+    package="com.klavor.app.linkconversion"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
-        android:name="me.stiky.MyAPP"
+        android:name="com.klavor.MyAlication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="me.stiky.demo.MainActivity">
+        <activity android:name="com.klavor.demo.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

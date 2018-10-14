@@ -1,4 +1,4 @@
-package me.stiky.utlis;
+package com.klavor.utlis;
 
 import java.io.UnsupportedEncodingException;
 

@@ -1,13 +1,13 @@
-package me.stiky.demo;
+package com.klavor.demo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
-import me.stiky.utlis.R;
-import me.stiky.utlis.P2PUrlUtil;
-import me.stiky.utlis.UiUtil;
+import com.klavor.utlis.R;
+import com.klavor.utlis.P2PUrlUtil;
+import com.klavor.utlis.UiUtil;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

@@ -1,4 +1,4 @@
-package me.stiky.utlis;
+package com.klavor.utlis;
 
 import android.content.Context;
 import android.widget.Toast;
